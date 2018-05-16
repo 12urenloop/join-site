@@ -1,6 +1,9 @@
 .header {
+  background-color: #ddd;
+
   h1 {
     color: #fff;
+    text-shadow: 3px 3px #000;
     text-transform: uppercase;
     line-height: 1.125;
     font-family: 'LeagueGothic-Regular';
@@ -50,19 +53,74 @@ label.required:after{
   background-size: cover;
 }
 
-.teams {
-  .column {
-    padding: 0.5rem;
+#info {
+  h1 {
+    font-size: 3rem;
+    line-height: 56px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 14px;
+    font-size: 1.6rem;
+    line-height: 28px;
+  }
+
+  h4 {
+    line-height: 20px;
+    font-size: 1rem;
+    color: #555;
+    font-family: 'segoe-ui_normal';
+  }
+
+  h1, h2, h3 {
+    font-family: 'segoe-ui_light';
+  }
+
+  .reasons {
+    .icon {
+      height: 100px;
+
+      .fa {
+        font-size: 100px;
+      }
+    }
+  }
+
+  .passions {
+    h2 {
+      font-weight: 700;
+      font-size: 1.55rem;
+    }
+
+    img {
+      border-radius: 100%
+    }
   }
 }
 
-.team {
-  border: 1px solid #000;
-  padding: 5px;
-  height: 100%;
+.divider-wrapper {
+  min-height: 0 !important;
 
-  .team-name {
-    display: block;
-    font-weight: bold;
+  .divider {
+    border-top: 1px solid #000;
+    margin-top: 30px;
   }
 }
+
+//.teams {
+  //.column {
+    //padding: 0.5rem;
+  //}
+//}
+
+//.team {
+  //border: 1px solid #000;
+  //padding: 5px;
+  //height: 100%;
+
+  //.team-name {
+    //display: block;
+    //font-weight: bold;
+  //}
+//}
