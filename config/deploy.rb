@@ -5,7 +5,7 @@ set :rbenv_type, :system
 set :rbenv_ruby, File.read('.ruby-version').strip
 
 set :application, 'urenloop-join'
-set :repo_url, 'git@github.com:12urenloop/12urenloop.git'
+set :repo_url, 'git@github.com:12urenloop/join-site.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
