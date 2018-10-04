@@ -2,8 +2,8 @@
   background-color: #ddd;
 
   h1 {
-    color: #fff;
-    text-shadow: 3px 3px #000;
+    color: #ffc007;
+    text-shadow: 5px 5px 5px #2a2ba1;
     text-transform: uppercase;
     line-height: 1.125;
     font-family: 'LeagueGothic-Regular';
@@ -42,6 +42,7 @@
 
 .button.is-info {
   color: #fff !important;
+  margin-top: 10px !important;
 }
 
 label.required:after{
