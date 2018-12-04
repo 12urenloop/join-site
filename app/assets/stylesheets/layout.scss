@@ -4,19 +4,23 @@
   h1 {
     color: #fff;
     line-height: 1.125;
-    font-family: 'LeagueGothic-Regular';
     font-size: 120px;
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: 2px 2px #000000;
+    margin-top:20%;
 }
-h2, h3 {
-    font-family: 'Oswald', sans-serif;   font-weight: 300;
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
   }
 
   // Sprockets helper
   // http://guides.rubyonrails.org/asset_pipeline.html#css-and-sass
-  background: image-url('background.png');
+  background: image-url('background.jpg');
   background-size: cover;
 
   .images {
@@ -61,6 +65,8 @@ label.required:after{
   h1 {
     font-size: 3rem;
     line-height: 56px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
   }
 
   h3 {
@@ -74,11 +80,11 @@ label.required:after{
     line-height: 20px;
     font-size: 1rem;
     color: #555;
-    font-family: 'segoe-ui_normal';
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
-  h1, h2, h3 {
-    font-family: 'segoe-ui_light';
+  h2, h3 {
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   .reasons {
@@ -93,7 +99,6 @@ label.required:after{
 
   .passions {
     h2 {
-      font-weight: 700;
       font-size: 1.55rem;
     }
 
