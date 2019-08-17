@@ -2,7 +2,7 @@
 
 NIEUWE DB STRUCTUUR DUS DB MOET GERESET WORDEN ENZO BIJ DEPLOYMENT
 
-AFTERMOVIE MISSING: download from here:
+AFTERMOVIE MISSING: download from here: https://drive.google.com/open?id=1PoLm0LBjQGYSUMfa89bctGiY4gJHupTi
 PUT IN app\assets\videos
 
 
