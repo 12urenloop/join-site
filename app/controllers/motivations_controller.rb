@@ -21,6 +21,6 @@ class MotivationsController < ApplicationController
   private
 
   def motivation_params
-    params.require(:motivation).permit(:name, :email, :phone, :motivation)
+    params.require(:motivation).permit(:name, :firstname, :email, :phone, :team, :motivation)
   end
 end

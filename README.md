@@ -1,5 +1,13 @@
 # README
 
+NIEUWE DB STRUCTUUR DUS DB MOET GERESET WORDEN ENZO BIJ DEPLOYMENT
+
+AFTERMOVIE MISSING: download from here:
+PUT IN app\assets\videos
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

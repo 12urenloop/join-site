@@ -1,111 +1,334 @@
-<div id='top' class='header hero is-fullheight'>
-  <div class='hero-body'>
-    <div class='container'>
-      <div class='columns'>
-        <div class='column has-text-centered'>
-          <h1 class='text-shadow'>Join the 12ul</h1>
-          <a class='button is-info' href='/#info'>Meer info</a>
-        </div>
-        <div class='column'>
-          <%= render 'form' %>
-        </div>
-      </div>
-    </div>
+<div id='home'>
+</div>
+<%= render 'header' %>
+
+<a href="#home" class="scrollToTop fa fa-angle-double-up" title='Go to top'></a>
+
+<div id='realhome'>
+  <div class='has-text-centered'>
+    <join-title> Join the 12ul crew <join-title>
+  </div>
+
+  <div class="video-wrapper">
+    <%= video_tag 'aftermovie.mp4#t=0.1', controls: :controls, loop: :loop, muted: :muted, poster: 'poster.png', preload: 'none', id: 'home-video' %>
+  </div>
+
+  <div id='button-div' class='button-div has-text-centered'>
+      <a class='button is-12ul' href='/#algemeen'>Meer info</a>
+      <a class='button is-12ul' href='/#inschrijven'>Inschrijven</a>
   </div>
 </div>
 
-<div id='info' class='hero is-fullheight is-bold bsa'>
-  <div class='hero-body'>
-    <div class='container'>
-      <div class='columns'>
-        <div class='column is-12'>
-          <h1 class='has-text-centered'>Waarom 12urenloop<h1>
-        </div>
-      </div>
-
-      <div class='columns has-text-centered reasons'>
-        <div class='column'>
-          <span class='icon'>
-            <i class='fa fa-users'></i>
-          </span>
-          <h3>Werk samen met een hoop andere gedreven studenten</h3>
-          <p>Het 12urenloop comité bestaat uitsluitend uit studenten<br /> die zich vrijwillig inzetten.</p>
-        </div>
-
-        <div class='column'>
-          <span class='icon'>
-            <i class='fa fa-star'></i>
-          </span>
-          <h3>Echte ervaring</h3>
-          <p>Krijg zelf de verantwoordelijkheid over een deel van het evenement,<br /> en breng dit tot een goed einde.</p>
-        </div>
-
-        <div class='column'>
-          <span class='icon'>
-            <i class='fa fa-calendar'></i>
-          </span>
-          <h3>Het sportieve evenement van het jaar</h3>
-          <p>Geniet van de voldoening die het tot stand brengen <br />van het grootste sportieve event van Gent, met zich meebrengt.</p>
-        </div>
-      </div>
-
-      <div class='columns divider-wrapper'>
-        <div class='column is-12 divider'>
-        </div>
-      </div>
-
-      <div class='columns passions is-multiline is-centered has-text-centered'>
-        <div class='column is-12'>
-          <h1 class='has-text-centered'>Teams<h1>
-        </div>
-        <div class='column is-3'>
-          <%= image_tag 'teams/beverages.jpg' %>
-          <h3>Beverages</h3>
-	  <p>Mensen die afzien van het vele lopen is iets, mensen die afzien van de dorst is ronduit onaanvaardbaar. Help jij de dorst lessen?</p>
-        </div>
-        <div class='column is-3'>
-          <%= image_tag 'teams/partners.jpg' %>
-          <h3>Partners</h3>
-          <p>Kan je het goed uitleggen en jezelf verkopen? Help mee de nodige partners en sponsers binnen te halen.</p>
-        </div>
-        <div class='column is-3'>
-          <%= image_tag 'teams/site.jpg' %>
-          <h3>Site</h3>
-          <p>Zoek mee naar leveranciers voor al het materieel of help mee het Sint-Pieters Plein om te toveren in een loopcircuit.</p>
-        </div>
-        <div class='column is-3'>
-          <%= image_tag 'teams/mc.jpg' %>
-          <h3>Marketing & Communications</h3>
-          <p>In de voorbereiding en tijdens het event hou je de wereld op de hoogte van wat er op het terrein zal gebeuren.</p>
-        </div>
-        <div class='column is-3'>
-          <%= image_tag 'teams/ra.jpg' %>
-          <h3>Run & Animation</h3>
-          <p>Zorg ervoor dat de mensen zich niet vervelen. Maak van het terrein een mini pretpark waar veel te beleven valt in een aangename setting.</p>
-        </div>
-        <div class='column is-3'>
-          <%= image_tag 'teams/fa.jpg' %>
-          <h3>Finance & Administration</h3>
-          <p>Hou overzicht in de berg papieren en zorg ervoor dat alle facturen tijdig betaald worden.</p>
-        </div>
-        <div class='column is-3'>
-          <%= image_tag 'teams/it.jpg' %>
-          <h3>IT</h3>
-          <p>Manueel tellen is zo jaren 90. Hou jij mee het telsysteem draaiende of de site up-to-date?</p>
-        </div>
-      </div>
-
-      <div class='columns divider-wrapper'>
-        <div class='column is-12 divider'>
-        </div>
-      </div>
-
-      <div class='columns is-multiline is-centered has-text-centered'>
-        <div class='column is-12'>
-          <h1 class='has-text-centered'>Nog vragen</h1>
-          <%= link_to 'Stuur een mailtje', 'mailto:info@12urenloop.be', class: 'button is-info' %>
-        </div>
-      </div>
-    </div>
+<div class='container main-content'>
+  <div class='columns divider-wrapper'>
+    <div class='column is-12 divider'></div>
   </div>
 </div>
+
+<div id='algemeen' class='container main-content is-bold bsa'>
+      <div class='columns has-text-centered'>
+        <div class='column is-12'>
+          <h1> Waarom 12urenloop </h1>
+            <p class='fancy-font'>
+              Wilde jij altijd al eens weten hoe in event tot stand komt? Grijp je kans!
+            </p>
+        </div>
+      </div>
+
+          <div class='columns has-text-centered reasons'>
+            <div class='column'>
+              <span class='icon big-icon'>
+                <i class='fa fa-users'></i>
+              </span>
+              <h3>Studenten ondereen</h3>
+              <p>De 12urenloop crew bestaat uitsluitend uit studenten die zich vrijwillig inzetten.</p>
+            </div>
+
+            <div class='column'>
+              <span class='icon big-icon'>
+                <i class='fa fa-star'></i>
+              </span>
+              <h3>Echte ervaring</h3>
+              <p>Ervaren rot of groentje? Iedereen draagt op zijn manier bij aan de organisatie van dit prachtig event. De ideale leerschool dus.</p>
+            </div>
+
+            <div class='column'>
+              <span class='icon big-icon'>
+                <i class='fa fa-calendar'></i>
+              </span>
+              <h3>Het sportief hoogtepunt</h3>
+              <p>Geniet van de voldoening na het organiseren van een top event.</p>
+            </div>
+          </div>
+  </div>
+
+  <div class='container main-content'>
+    <div class='columns divider-wrapper'>
+      <div class='column is-12 divider'></div>
+    </div>
+  </div>
+
+<div id='teams' class='container main-content is-bold bsa'>
+    <div class='columns'>
+      <div class='column is-12'>
+        <h1 class='has-text-centered'>
+          De Teams
+        </h1>
+        <p class='fancy-font'>
+          Hieronder vindt je een overzicht van de verschillende teams en een korte beschrijving van hun voornaamste takenpakket.
+          Het is natuurlijk meer dan deze paar lijntjes maar het heeft je alvast een idee. <br/>
+          Heb je nog vragen? Aarzel niet om ons te contacteren, we geven je graag meer uitleg want misschien ben jij echt wel het talent die we zoeken.
+        </p>
+      </div>
+    </div>
+
+          <div class='container team-content'>
+            <div id='ra' class='message'>
+              <div class='message-header has-text-centered'>
+                <message-title class="yellow">Team R&A</message-title>
+              </div>
+              <div class='message-body team-message is-multiline is-centered'>
+                <div>
+                  <%= image_tag 'teams/ra.jpg', class: 'img-left'%>
+                </div>
+                <div>
+                  Team Run&Animation, afgekort tot R&A, staat in voor alles wat te maken heeft met het lopen en de sfeer errond.
+                  Je staat in voor de speciale rondes en leidt deze in goede banden. Aangezien niet iedereen komt om te lopen voorzie je ook de nodige randactiviteiten.
+
+                  <ul>
+                    <li class='message-list'>
+                      <list-item>
+                        Speciale Rondes
+                      </list-item>
+                      <br/>
+                      Je bent mee verantwoordelijk voor de uitwerking van de speciale rondes en bijhorende prijzen.
+                      Naast de klassiekers is er natuurlijk ruimte voor vernieuwing. Wees creatief en bedenk de gekste (maar veilige) uitdagingen die tot een goed einde moeten worden gebracht.
+                    </li>
+
+                      <li class='message-list'>
+                      <list-item>
+                        Animatie
+                      </list-item>
+                      <br/>
+                      Jouw taak is ervoor zorgen dat niemand zich verveelt.
+                      Maak van het terrein een mini pretpark waar veel te beleven valt in een aangename setting.
+                      Ga op zoek naar leuke activiteiten of standen die een leuke afwisseling vormen voor het lopen.
+                    </li>
+                  </div>
+                </div>
+                <div class='control'>
+                  <a class='button is-12ul' href='/#inschrijven'>Inschrijven</a>
+                </div>
+
+              </div>
+
+
+            <div id='beverages' class='message'>
+              <div class='message-header has-text-centered'>
+                <message-title class="yellow">Team Beverages</message-title>
+              </div>
+              <div class='message-body team-message is-multiline is-centered'>
+                <div>
+                  <%= image_tag 'teams/beverages.jpg', class: 'img-right' %>
+                </div>
+                <div>
+                    Lopers verliezen vaak liters vocht en we weten allemaal dat dit niet zo gezond is. Help jij mee de dorst te lessen?
+                  <ul>
+                    <li class='message-list'>
+                      <list-item>
+                        Drank
+                      </list-item>
+                      <br/>
+                      Met je team stel je de drankkaart op en probeer je de beste deals met producenten te sluiten. Natuurlijk moet deze drank tijdig op het terrein en in de koeling terecht komen.
+                      Je maakt dan ook duidelijke afspraken met de brouwer en andere leveranciers.
+                    </li>
+                    <li class='message-list'>
+                      <list-item>
+                        Logistiek
+                      </list-item>
+                      <br/>
+                      Elke kring richt zijn eigen fakbar in. Jij zorgt ervoor dat ze allemaal tijdig hun drank bestellen. Tijdens de dag zorg je ervoor dat de afhaling en terugname vlot verloopt.
+                    </li>
+                    <li class='message-list'>
+                      <list-item>
+                        Barverantwoordelijke
+                      </list-item>
+                      <br/>
+                      Ook de 12urenloop zet zijn bar uit en die moet natuurlijk gerund worden.
+                      Als barverantwoordelijke zorg je voor de nodige mankracht en hou je de boel draaiend. Hou de voorraad in de gaten en stuur bij waar nodig.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='control'>
+                <a class='button is-12ul' href='/#inschrijven'>Inschrijven</a>
+              </div>
+            </div>
+
+            <div id='site' class='message'>
+              <div class='message-header has-text-centered'>
+                <message-title class="yellow">Team Site</message-title>
+              </div>
+              <div class='message-body team-message is-multiline is-centered'>
+                <div>
+                  <%= image_tag 'teams/site.jpg', class: 'img-left'%>
+                </div>
+                <div>
+                  Team Site zorgt ervoor dat het Sint-Pietersplein omgetoverd wordt tot het perfecte loopparcour.
+                  Ze zoeken de beste leveranciers en verzorgen de opbouw, van hekwerk tot podium.
+                  Ben jij de handige harry van de familie of sleur je gewoon graag eens met zware dingen? Inschrijven is de boodschap!
+
+                  <ul>
+                    <li class='message-list'>
+                      <list-item>
+                        Plan
+                      </list-item>
+                      <br/>
+                      Alles begint natuurlijk met een plan. Stel een lijst van benodigheden op en ga op zoek naar mogelijke leveranciers.
+                      Je houdt de benodigheden van elk kring bij en geeft alles zijn plek.
+                    </li>
+
+                    <li class='message-list'>
+                      <list-item>
+                        <br/>
+                        Opbouw en afbouw
+                      </list-item>
+                      <br/>
+                      Je zorgt ervoor dat je leveringen mooi op tijd aankomen en bouwt samen met de rest van de crew het plein om tot loopparcour.
+                    </li>
+                  </ul>
+              </div>
+            </div>
+            <div class='control'>
+              <a class='button is-12ul' href='/#inschrijven'>Inschrijven</a>
+            </div>
+          </div>
+
+
+          <div id='partners' class='message'>
+            <div class='message-header has-text-centered'>
+              <message-title class="yellow">Team Partners</message-title>
+            </div>
+            <div class='message-body team-message is-multiline is-centered'>
+              <div>
+                <%= image_tag 'teams/partners.jpg', class: 'img-right' %>
+              </div>
+              <div>
+                Een podium in ware Tomorrowland stijl? Het terrein omgetoverd in het strand van Ibiza? Alle dagen eten van een sterrenchef?
+                Graag! Alleen is daar het nodige budget voor nodig. <br />
+                Ga mee op zoek naar sponsoring. Hoe meer jij binnenhaalt, hoe beter deze editie van de 12urenloop zal worden.
+                Dus kun jij een leisteen verkopen als tablet van de toekomst? Schrijf je dan zeker in en help ons de nodige partners en sponsoring te vinden.
+              </div>
+            </div>
+            <div class='control'>
+              <a class='button is-12ul' href='/#inschrijven'>Inschrijven</a>
+            </div>
+          </div>
+
+          <div id='mc' class='message'>
+            <div class='message-header has-text-centered'>
+              <message-title class="yellow">Team PR</message-title>
+            </div>
+            <div class='message-body team-message is-multiline is-centered'>
+              <div>
+                <%= image_tag 'teams/mc.jpg', class: 'img-left' %>
+              </div>
+              <div>
+                Communication is key! Zowel intern als extern passeren er heel wat berichten dus iemand moet er voor zorgen dat alles iet of wat op de juiste plek terecht komt.
+
+                <ul>
+                  <li class='message-list'>
+                    <list-item>
+                      Social Media
+                    </list-item>
+                    <br/>
+                    Hebben Facebook, Instagram en andere geen geheimen voor jouw? Weet jij je volgers te bereiken?
+                    Dan ben jij misschien de persoon die we zoeken. Neem onze social media kanalen onder je hoede en hou onze volgers constant op de hoogte.
+                  </li>
+                  <li class='message-list'>
+                    <list-item>
+                      Communicatie/Marketing
+                    </list-item>
+                    <br/>
+                    Hou de deelnemende teams op de hoogte van diverse zaken zoals de speciale rondes of na te leven afspraken.
+                    Tevens vorm je hun voornaamste aanspreekpunt. Daarnaast is er natuurlijk ook de communicatie naar de buren en veel meer.
+                  </li>
+                  <li class='message-list'>
+                    <list-item>
+                      Design
+                    </list-item>
+                    Gezocht: creative geesten met design talent om de campagne van de beste ontwerpen te voorzien, zowel voor de online als de aankleding op het terrein.
+                    Ben jij de photoshop master die de 12urenloop doet blinken?
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='control'>
+              <a class='button is-12ul' href='/#inschrijven'>Inschrijven</a>
+            </div>
+          </div>
+
+          <div id='fa' class='message'>
+            <div class='message-header has-text-centered'>
+              <message-title class="yellow">Team Finance & Administration</message-title>
+            </div>
+            <div class='message-body team-message is-multiline is-centered'>
+              <div>
+                <%= image_tag 'teams/fa.jpg', class: 'img-right' %>
+              </div>
+              <div>
+                Facturen en bonnekes, ze zijn zo belangrijk maar ook zo gemakkelijk om kwijt te raken.
+                Help mee de papierwinkel op orde te houden en hou de financiële stand van zaken in het oog.
+              </div>
+            </div>
+            <div class='control'>
+              <a class='button is-12ul' href='/#inschrijven'>Inschrijven</a>
+            </div>
+          </div>
+
+          </div>
+        </div>
+
+
+        <div class='container main-content'>
+          <div class='columns divider-wrapper'>
+            <div class='column is-12 divider'></div>
+          </div>
+        </div>
+
+<div id='inschrijven' class='container main-content is-bold bsa'>
+        <div class='columns has-text-centered'>
+          <div class='column is-12'>
+            <h1>
+              Volledig overtuigd?
+            </h1>
+            <h1 class='small'>
+            Schrijf je dan nu in!
+            </h1>
+          </div>
+          </div>
+        <div class="columns"
+          <div class='column'>
+            <div class='column is-8 is-offset-2'>
+              <%= render 'form' %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class='container main-content'>
+          <div class='columns divider-wrapper'>
+            <div class='column is-12 divider'></div>
+          </div>
+        </div>
+
+  <div id='contact' class='container main-content is-bold bsa'>
+        <div class='columns is-multiline is-centered has-text-centered'>
+          <div class='column is-12'>
+            <h1> Nog vragen </h1>
+            <%= link_to 'Stuur een mailtje', 'mailto:info@12urenloop.be', title: 'info@12urenloop.be', class: 'button is-12ul' %>
+          </div>
+        </div>
+      </div>
+
+  <%= render "footer" %>
