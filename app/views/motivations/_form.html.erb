@@ -1,5 +1,3 @@
-<div class='columns'>
-  <div class='column is-8-desktop is-offset-2-desktop'>
     <div class='card'>
       <div class='card-content'>
         <% if @motivation.errors.any?  %>
@@ -12,12 +10,28 @@
           </div>
         <% end %>
         <%= form_for @motivation do |f| %>
-          <div class='field'>
-            <%= f.label :name, 'Naam', class: 'label required' %>
-            <p class='control'>
-            <%= f.text_field :name, class: 'input', required: true %>
-            </p>
+        <div class='clean-columns'>
+        <div class='columns'>
+          <div class='column'>
+            <div class='field'>
+              <%= f.label :name, 'Naam', class: 'label required' %>
+              <p class='control'>
+              <%= f.text_field :name, class: 'input', required: true %>
+              </p>
+            </div>
           </div>
+          <div class='column'>
+            <div>
+              <%= f.label :firstname, 'Voornaam', class: 'label required' %>
+              <p class='control'>
+              <%= f.text_field :firstname, class: 'input', required: true %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
           <div class='field'>
             <%= f.label :email, class: 'label required' %>
@@ -34,17 +48,22 @@
           </div>
 
           <div class='field'>
-            <%= f.label :motivation, 'Motivatie', class: 'label' %>
+            <%= f.label :team, 'Favoriete Team', class: 'label' %>
             <p class='control'>
-            <%= f.text_area :motivation, class: 'textarea' %>
+            <%= f.text_field :team, class: 'input', placeholder: 'Wat zou je graag doen' %>
             </p>
           </div>
 
-          <p class='control'>
-          <%= f.submit 'Verstuur', class: 'button is-success' %>
+          <div class='field'>
+            <%= f.label :motivation, 'Motivatie', class: 'label' %>
+            <p class='control'>
+            <%= f.text_area :motivation, class: 'textarea', placeholder: 'Vertel ons waarom' %>
+            </p>
+          </div>
+
+          <p class='submit'>
+          <%= f.submit 'Verzenden', class: 'button is-success' %>
           </p>
         <% end %>
       </div>
     </div>
-  </div>
-</div>

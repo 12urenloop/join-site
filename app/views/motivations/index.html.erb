@@ -1,16 +1,24 @@
+<div id='header' class='header'>
+
+</div>
+
 <table class='table'>
   <thead>
     <td>Name</td>
+    <td>FirstName</td>
     <td>Email</td>
     <td>Phone</td>
+    <td>Team</td>
     <td>Motivation</td>
   </thead>
   <tbody>
     <% @motivations.each do |m| %>
       <tr>
         <td><%= m.name %></td>
+        <td><%= m.firstname %></td>
         <td><%= m.email %></td>
         <td><%= m.phone %></td>
+        <td><%= m.team %></td>
         <td><%= m.motivation %></td>
       </tr>
     <% end %>
