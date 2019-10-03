@@ -1,5 +1,4 @@
 # config valid only for current version of Capistrano
-lock '3.8.2'
 
 set :rbenv_type, :system
 set :rbenv_ruby, File.read('.ruby-version').strip
