@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  web:
+    build: .
+    ports:
+    - "8080:8080"
+    env_file:
+    - .env
+  database:
+    image: mariadb:10
+    restart: always
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yesplease
+      - MYSQL_DATABASE=join
+      - MYSQL_USER=join
+      - MYSQL_PASSWORD=join
+    volumes:
+    - "urenloop-join-database:/var/lib/mysql"
+volumes:
+  urenloop-join-database:
