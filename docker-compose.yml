@@ -17,5 +17,10 @@ services:
       - MYSQL_PASSWORD=join
     volumes:
     - "urenloop-join-database:/var/lib/mysql"
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "5"
+
 volumes:
   urenloop-join-database:
