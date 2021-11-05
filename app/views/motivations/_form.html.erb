@@ -48,16 +48,9 @@
           </div>
 
           <div class='field'>
-            <%= f.label :team, 'Favoriete Team', class: 'label' %>
-            <p class='control'>
-            <%= f.text_field :team, class: 'input', placeholder: 'Wat zou je graag doen' %>
-            </p>
-          </div>
-
-          <div class='field'>
             <%= f.label :motivation, 'Motivatie', class: 'label' %>
             <p class='control'>
-            <%= f.text_area :motivation, class: 'textarea', placeholder: 'Vertel ons waarom' %>
+            <%= f.text_area :motivation, class: 'textarea', placeholder: 'Vertel ons wat je wil doen en waarom', required: true %>
             </p>
           </div>
 

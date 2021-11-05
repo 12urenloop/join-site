@@ -1,18 +1,21 @@
-<nav class='nav nav-right'>
+<nav class='navbar' role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <div class="navbar-item">
+      <%= image_tag 'logo-small.png'%>
+    </div>
+  </div>
+  <div class='navbar-end'>
+    <div class="navbar-item field is-grouped">
         <ul>
-          <li><a href='#home'>Home</a></li>
-          <li><a href='#algemeen'>Algemeen</a></li>
+          <li><a href='#home'>Inschrijven</a></li>
           <li><a href='#teams'>Teams</a></li>
-          <li><a href='#inschrijven'>Inschrijven</a></li>
-          <li><a href='#contact'>Contact</a></li>
         </ul>
 
         <select class='nav-select' name='dropdpown' size='1' onChange='scrollTo(this.value)'>
           <option value='' selected='selected'>Menu</option>
-          <option value='#home'>Home</option>
-          <option value='#algemeen'>Algemeen</option>
+          <option value='#home'>Inschrijven</option>
           <option value='#teams'>Teams</option>
-          <option value='#inschrijven'>Inschrijven</option>
-          <option value='#contact'>Contact</option>
         </select>
+      </div>
+      </div>
 </nav>
