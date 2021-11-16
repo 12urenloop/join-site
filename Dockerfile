@@ -39,4 +39,4 @@ RUN apt-get update -qq \
   && truncate -s 0 /var/log/*log
 
 RUN bundle install
-CMD bundle exec rails s -p 8080
+CMD bundle exec rails server -b 0.0.0.0 -p 3000 -e production
