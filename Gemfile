@@ -12,7 +12,7 @@ gem 'rails'
 gem 'sqlite3'
 
 gem 'mysql2'
-gem 'nokogiri', '1.13.5'
+gem 'nokogiri', '1.12.5'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
