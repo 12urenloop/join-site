@@ -4,7 +4,7 @@ services:
   web:
     build: .
     ports:
-    - "8080:8080"
+    - "3000:3000"
     env_file:
     - .env
   database:
@@ -17,10 +17,6 @@ services:
       - MYSQL_PASSWORD=join
     volumes:
     - "urenloop-join-database:/var/lib/mysql"
-    logging:
-      options:
-        max-size: "100m"
-        max-file: "5"
 
 volumes:
   urenloop-join-database:
