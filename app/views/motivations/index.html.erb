@@ -2,8 +2,9 @@
 
 </div>
 
-<table class='table'>
-  <thead>
+<table style="width:100%;" class='table'>
+  <thead style="background:#fc0">
+    <td></td>
     <td>Name</td>
     <td>FirstName</td>
     <td>Email</td>
@@ -13,6 +14,7 @@
   <tbody>
     <% @motivations.each do |m| %>
       <tr>
+        <td><%= m.created_at %></td>
         <td><%= m.name %></td>
         <td><%= m.firstname %></td>
         <td><%= m.email %></td>
