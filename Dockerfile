@@ -38,5 +38,6 @@ RUN apt-get update -qq \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && truncate -s 0 /var/log/*log
 
+RUN bundle config without development test
 RUN bundle install
 CMD bundle exec rails server -b 0.0.0.0 -p 3000 -e production
