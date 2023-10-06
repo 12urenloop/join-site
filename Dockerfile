@@ -40,4 +40,7 @@ RUN apt-get update -qq \
 
 RUN bundle config without development test
 RUN bundle install
+
+RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
+
 CMD bundle exec rails server -b 0.0.0.0 -p 3000 -e production
