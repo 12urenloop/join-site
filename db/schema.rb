@@ -19,6 +19,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_05_181657) do
     t.text "motivation", null: false
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
+    t.string "school"
+    t.string "opleiding"
+    t.integer "studyyears"
   end
 
 end
