@@ -1,4 +1,4 @@
-FROM ruby:2.5.8-slim-buster
+FROM ruby:3.2.2-slim-buster
 
 # Common dependencies
 RUN apt-get update -qq \
@@ -21,7 +21,7 @@ ENV LANG=C.UTF-8 \
 
 # Upgrade RubyGems and install required Bundler version (see Gemfile.lock)
 RUN gem update --system && \
-    gem install bundler:1.17.1
+    gem install bundler:2.4.20
 
 # Create a directory for the app code
 COPY . /app
@@ -38,5 +38,6 @@ RUN apt-get update -qq \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && truncate -s 0 /var/log/*log
 
+RUN bundle config without development test
 RUN bundle install
 CMD bundle exec rails server -b 0.0.0.0 -p 3000 -e production
