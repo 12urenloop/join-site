@@ -21,7 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: mysql2
+  adapter: trilogy
   encoding: utf8
   database: join
   username: join

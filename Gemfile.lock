@@ -166,7 +166,6 @@ GEM
     mini_portile2 (2.8.4)
     minitest (5.20.0)
     mutex_m (0.1.2)
-    mysql2 (0.5.5)
     net-http (0.4.1)
       uri
     net-imap (0.4.0)
@@ -279,6 +278,7 @@ GEM
     thor (1.2.2)
     tilt (2.3.0)
     timeout (0.4.0)
+    trilogy (2.8.1)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -325,7 +325,6 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   listen
-  mysql2
   nokogiri
   puma
   rails
@@ -333,6 +332,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   sqlite3
+  trilogy
   turbolinks
   tzinfo-data
   uglifier
