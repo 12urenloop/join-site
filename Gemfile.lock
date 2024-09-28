@@ -123,6 +123,11 @@ GEM
       ruby2_keywords
     erubi (1.12.0)
     execjs (2.9.1)
+    faraday (2.11.0)
+      faraday-net_http (>= 2.0, < 3.4)
+      logger
+    faraday-net_http (3.3.0)
+      net-http
     ffi (1.16.3)
     font-awesome-rails (4.7.0.8)
       railties (>= 3.2, < 8.0)
@@ -146,6 +151,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.6.1)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -161,6 +167,8 @@ GEM
     minitest (5.20.0)
     mutex_m (0.1.2)
     mysql2 (0.5.5)
+    net-http (0.4.1)
+      uri
     net-imap (0.4.0)
       date
       net-protocol
@@ -218,6 +226,9 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
+    rails_cloudflare_turnstile (0.2.1)
+      faraday (>= 1.0, < 3.0)
+      rails (>= 6.0, < 8)
     railties (7.1.0)
       actionpack (= 7.1.0)
       activesupport (= 7.1.0)
@@ -277,6 +288,7 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
+    uri (0.13.1)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -317,6 +329,7 @@ DEPENDENCIES
   nokogiri
   puma
   rails
+  rails_cloudflare_turnstile
   sassc-rails
   selenium-webdriver
   sqlite3
