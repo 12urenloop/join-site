@@ -6,4 +6,5 @@ class Motivation < ApplicationRecord
   validates :school, presence: true
   validates :opleiding, presence: true
   validates :studyyears, presence: true
+  validates :function, presence: true
 end

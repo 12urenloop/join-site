@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_10_05_181657) do
+ActiveRecord::Schema[7.1].define(version: 2024_09_28_153728) do
   create_table "motivations", force: :cascade do |t|
     t.string "name", null: false
     t.string "firstname", null: false
@@ -22,6 +22,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_05_181657) do
     t.string "school"
     t.string "opleiding"
     t.integer "studyyears"
+    t.string "function"
   end
 
 end

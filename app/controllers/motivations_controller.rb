@@ -1,5 +1,5 @@
 class MotivationsController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: ENV['APP_ADMIN_PASSWORD'], only: :index
+  http_basic_authenticate_with name: 'admin', password: ENV['APP_ADMIN_PASSWORD'], only: :index
   before_action :validate_cloudflare_turnstile, only: :create
 
   def new
@@ -23,6 +23,6 @@ class MotivationsController < ApplicationController
 
   def motivation_params
     params.require(:motivation).permit(:name, :firstname, :email, :phone, :team, :motivation, :studyyears, :opleiding,
-                                       :school)
+                                       :school, :function)
   end
 end

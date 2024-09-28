@@ -67,6 +67,12 @@
           </div>
 
           <div class='field'>
+            <%= f.label :function, 'Functie', class: 'label required' %>
+            <p class='control'>
+            <%= f.text_field :function, class: 'input', required: true %>
+            </p>
+
+          <div class='field'>
             <%= f.label :motivation, 'Motivatie', class: 'label' %>
             <p class='control'>
             <%= f.text_area :motivation, class: 'textarea', placeholder: 'Vertel ons wat je wil doen en waarom', required: true %>
