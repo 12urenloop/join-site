@@ -129,6 +129,8 @@ GEM
     faraday-net_http (3.3.0)
       net-http
     ffi (1.16.3)
+    ffi (1.16.3-java)
+    ffi (1.16.3-x86-mingw32)
     font-awesome-rails (4.7.0.8)
       railties (>= 3.2, < 8.0)
     globalid (1.2.1)
@@ -185,6 +187,10 @@ GEM
     nokogiri (1.15.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
+    nokogiri (1.15.4-java)
+      racc (~> 1.4)
+    nokogiri (1.15.4-x86-mingw32)
+      racc (~> 1.4)
     psych (5.1.0)
       stringio
     psych (5.1.0-java)
@@ -196,7 +202,7 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.1)
     racc (1.7.1-java)
-    rack (3.0.8)
+    rack (3.0.9.1)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
